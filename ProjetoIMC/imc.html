@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calcular IMC - NutriTrack</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/imc.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand"><span>🍏</span> NutriTrack</div>
+        <ul>
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="refeicao.html">Registrar Refeição</a></li>
+          <li><a href="imc.html">Calcular IMC</a></li>
+          <li><a href="historico.html">Histórico</a></li>
+          <li><a href="grafico.html" class="active">Gráficos</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h1>Calcular IMC</h1>
+    <form id="imcForm">
+      <input type="number" id="peso" placeholder="Peso (kg)" min="0" step="0.1" required>
+      <input type="number" id="altura" placeholder="Altura (m)" min="0.3" max="3" step="0.01" required>
+      <button type="submit">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+    <p><a href="index.html">Voltar ao Menu</a></p>
+  </div>
+  <script src="/js/imc.js"></script>
+</body>
+</html>

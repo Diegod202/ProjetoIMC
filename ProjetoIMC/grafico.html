@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>NutriTrack - Gráficos</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/grafico.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand"><span>🍏</span> NutriTrack</div>
+        <ul>
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="refeicao.html">Registrar Refeição</a></li>
+        <li><a href="imc.html">Calcular IMC</a></li>
+        <li><a href="historico.html">Histórico</a></li>
+        <li><a href="grafico.html" class="active">Gráficos</a></li>
+        </ul>
+    </nav>
+<div class="container">
+  <h1>Gráficos de Evolução</h1>
+  <section>
+    <h2>Calorias por Dia</h2>
+    <canvas id="caloriasChart" width="340" height="180"></canvas>
+  </section>
+  <section>
+    <h2>Evolução do IMC</h2>
+    <canvas id="imcChart" width="340" height="180"></canvas>
+  </section>
+</div>
+<script src="/js/grafico.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(135deg, #fffde7 40%, #ffe082 100%);
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+  .container {
+    max-width: 700px;
+    margin: 45px auto 0;
+    background: #fff;
+    padding: 32px 16px 28px;
+    border-radius: 14px;
+    box-shadow: 0 2px 18px #ffe082;
+    text-align: center;
+  }
+  h1 {
+    color: #ff9800;
+    font-size: 1.7em;
+    margin-bottom: 22px;
+  }
+  h2 {
+    color: #f57c00;
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+  section { margin-bottom: 26px; }
+  canvas { background: #f7f7f7; border-radius: 10px; }
+  @media (max-width: 800px) {
+    .container { max-width: 97vw; }
+    canvas { width: 98vw !important; max-width: 340px; }
+  }

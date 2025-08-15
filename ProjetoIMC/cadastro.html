@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>NutriTrack - Cadastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+  <div class="background-shape"></div>
+  <div class="cadastro-container">
+    <div class="cadastro-card">
+      <div class="brand">
+        <span class="logo">🍏</span>
+        <span class="brand-text">NutriTrack</span>
+      </div>
+      <h2>Crie sua conta</h2>
+      <form id="cadastroForm" autocomplete="off">
+        <div class="input-group">
+          <input type="text" id="cadNome" required placeholder="Nome completo"/>
+        </div>
+        <div class="input-group">
+          <input type="email" id="cadEmail" required placeholder="E-mail"/>
+        </div>
+        <div class="input-group">
+          <input type="password" id="cadSenha" required placeholder="Senha"/>
+        </div>
+        <button type="submit" class="btn-cadastro">Cadastrar</button>
+        <div id="cadastroMsg" class="msg"></div>
+      </form>
+      <div class="divider">
+        <span>ou</span>
+      </div>
+      <a href="login.html" class="btn-outline">Já tem conta? Entrar</a>
+    </div>
+    <div class="cadastro-illustration">
+      <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-conceito-plano-de-dieta_23-2148571912.jpg" alt="Ilustração saudável"/>
+    </div>
+  </div>
+  <footer>
+    <small>&copy; 2025 NutriTrack</small>
+  </footer>
+  <script src="/js/cadastro.js"></script>
+</body>
+</html>

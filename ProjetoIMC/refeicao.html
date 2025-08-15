@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Refeição - NutriTrack</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/refeição.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand"><span>🍏</span> NutriTrack</div>
+        <ul>
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="refeicao.html">Registrar Refeição</a></li>
+          <li><a href="imc.html">Calcular IMC</a></li>
+          <li><a href="historico.html">Histórico</a></li>
+          <li><a href="grafico.html" class="active">Gráficos</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h1>Registrar Refeição</h1>
+    <form id="refeicaoForm">
+      <input type="text" id="nome" placeholder="Nome da refeição" required>
+      <input type="number" id="calorias" placeholder="Calorias (kcal)" min="0" required>
+      <input type="time" id="hora" required>
+      <button type="submit">Salvar</button>
+    </form>
+    <p><a href="index.html">Voltar ao Menu</a></p>
+    <div id="msg"></div>
+  </div>
+  <script src="/js/refeicao.js"></script>
+</body>
+</html>

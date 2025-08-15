@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>NutriTrack - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <div class="background-shape"></div>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="brand">
+        <span class="logo">🍏</span>
+        <span class="brand-text">NutriTrack</span>
+      </div>
+      <h2>Bem-vindo!</h2>
+      <form id="loginForm" autocomplete="off">
+        <div class="input-group">
+          <input type="email" id="loginEmail" required placeholder="E-mail"/>
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginSenha" required placeholder="Senha"/>
+        </div>
+        <button type="submit" class="btn-login">Entrar</button>
+        <div id="loginMsg" class="msg"></div>
+      </form>
+      <div class="divider">
+        <span>ou</span>
+      </div>
+      <a href="cadastro.html" class="btn-outline">Cadastre-se</a>
+    </div>
+    <div class="login-illustration">
+      <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-conceito-plano-de-dieta_23-2148571912.jpg" alt="Ilustração saudável"/>
+    </div>
+  </div>
+  <footer>
+    <small>&copy; 2025 NutriTrack</small>
+  </footer>
+  <script src="/js/login.js"></script>
+</body>
+</html>

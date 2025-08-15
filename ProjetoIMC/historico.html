@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Histórico - NutriTrack</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/historico.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand"><span>🍏</span> NutriTrack</div>
+        <ul>
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="refeicao.html">Registrar Refeição</a></li>
+          <li><a href="imc.html">Calcular IMC</a></li>
+          <li><a href="historico.html">Histórico</a></li>
+          <li><a href="grafico.html" class="active">Gráficos</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h1>Histórico</h1>
+    <h2>Refeições</h2>
+    <ul id="listaRefeicoes"></ul>
+    <h2>Registros de IMC</h2>
+    <ul id="listaIMC"></ul>
+    <button id="limpar" title="Limpa todo histórico">Limpar Histórico</button>
+    <p><a href="index.html">Voltar ao Menu</a></p>
+  </div>
+  <script src="/js/historico.js"></script>
+</body>
+</html>

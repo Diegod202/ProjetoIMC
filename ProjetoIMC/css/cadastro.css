@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #fffde7 0%, #d0f2e7 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .background-shape {
+    position: fixed;
+    top: -120px;
+    left: -160px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at 40% 50%, #ffe082 0%, #08a88a 120%);
+    border-radius: 50%;
+    opacity: 0.14;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .cadastro-container {
+    z-index: 2;
+    position: relative;
+    max-width: 900px;
+    margin: 48px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 72vh;
+  }
+  
+  .cadastro-card {
+    background: #fff;
+    padding: 46px 36px 38px 36px;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px #ffe08285;
+    min-width: 320px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .logo {
+    font-size: 2.1em;
+    background: linear-gradient(45deg,#ffe082,#08a88a);
+    border-radius: 50%;
+    padding: 7px;
+  }
+  .brand-text {
+    font-size: 1.4em;
+    color: #ffb300;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  h2 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 28px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .input-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 14px 12px;
+    font-size: 1em;
+    border: 2px solid #ffe082;
+    border-radius: 7px;
+    outline: none;
+    background: #f9fbe7;
+    transition: border 0.3s;
+    font-family: inherit;
+  }
+  input:focus {
+    border-color: #ffb300;
+  }
+  
+  .btn-cadastro {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg,#ffb300 60%,#08a88a 140%);
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px #ffe08270;
+  }
+  .btn-cadastro:hover {
+    background: linear-gradient(90deg,#ffd54f 50%,#08a88a 110%);
+    box-shadow: 0 3px 12px #08a88a50;
+  }
+  
+  .divider {
+    width: 100%;
+    text-align: center;
+    margin: 16px 0 10px 0;
+    position: relative;
+  }
+  .divider span {
+    background: #fff;
+    padding: 0 14px;
+    color: #ffe082;
+    font-weight: 600;
+    font-size: 0.98em;
+    position: relative;
+    z-index: 2;
+  }
+  .divider:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1.5px;
+    background: #ffe08260;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .btn-outline {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 0 auto;
+    background: #fffde7;
+    color: #ffb300;
+    font-size: 1.08em;
+    border: 2px solid #ffe082;
+    border-radius: 7px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s, border 0.2s;
+    margin-bottom: 4px;
+  }
+  .btn-outline:hover {
+    background: #ffe082;
+    color: #fff;
+    border-color: #08a88a;
+  }
+  
+  .msg {
+    margin-top: 10px;
+    color: #388e3c;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .cadastro-illustration {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    margin-left: 36px;
+  }
+  .cadastro-illustration img {
+    max-width: 340px;
+    width: 88%;
+    border-radius: 21px;
+    box-shadow: 0 4px 26px #ffe08230;
+  }
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    color: #ffe082;
+    font-size: 1em;
+    margin: 30px 0 12px 0;
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 900px) {
+    .cadastro-container { flex-direction: column; align-items: center; }
+    .cadastro-illustration { margin-left: 0; margin-top: 18px;}
+  }
+  @media (max-width: 600px) {
+    .cadastro-card { min-width: 90vw; max-width: 97vw; padding: 36px 8vw 28px 8vw; }
+    .cadastro-illustration img { width: 98vw; max-width: 330px;}
+  }

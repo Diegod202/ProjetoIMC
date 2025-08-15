@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(135deg, #e8f5e9 0%, #b2dfdb 100%);
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 540px;
+    margin: 60px auto;
+    padding: 38px 30px 30px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #c8e6c9;
+    text-align: center;
+  }
+  h1 {
+    color: #08a88a;
+    margin-bottom: 24px;
+    font-size: 2em;
+  }
+  p {
+    color: #333;
+    font-size: 1.12em;
+    margin-bottom: 20px;
+  }
+  .main-img {
+    width: 95%;
+    max-width: 340px;
+    border-radius: 15px;
+    margin-top: 12px;
+    box-shadow: 0 2px 12px #b2dfdb;
+  }
