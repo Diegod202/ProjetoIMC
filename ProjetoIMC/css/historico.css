@@ -1,76 +1,123 @@
 body {
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar {
-    /* Supondo que sua navbar seja fixa ou tenha altura notável */
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
+  background: linear-gradient(135deg, #fff8e1, #ffe082);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brand {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ef6c00;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: #ef6c00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar li a.active {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 480px;
+  margin: 90px auto 0 auto;
+  background: #fff;
+  padding: 38px 20px 28px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #ffe082;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #ef6c00;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+ul li {
+  background: #fff3e0;
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #333;
+  font-size: 1em;
+}
+
+button {
+  background: #ef6c00;
+  color: #fff;
+  padding: 9px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.2s;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #e65100;
+}
+
+a {
+  color: #ef6c00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
   .container {
-    max-width: 480px;
-    margin: 48px auto 0 auto;
-    background: #fff;
-    padding: 38px 18px 28px 18px;
-    border-radius: 12px;
-    box-shadow: 0 2px 16px #bbdefb;
-    text-align: center;
-    /* Adicione um espaçamento no topo para "descolar" da navbar */
-    margin-top: 90px;
+    margin-top: 76px;
+    max-width: 96vw;
+    padding: 18px 4vw 20px 4vw;
   }
-  
-  h1, h2 {
-    color: #1976d2;
-    margin-bottom: 16px;
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-    text-align: left;
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 10px;
   }
+
   ul li {
-    background: #e3f2fd;
-    margin: 6px 0;
-    padding: 10px 14px;
-    border-radius: 6px;
-    color: #333;
-    font-size: 1em;
+    font-size: 0.98em;
+    padding: 8px 10px;
   }
-  button {
-    background: #1976d2;
-    color: #fff;
-    padding: 9px 25px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 15px;
-    transition: background 0.2s;
-  }
-  button:hover {
-    background: #0d47a1;
-  }
-  a {
-    color: #1976d2;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 600px) {
-    .container {
-      margin-top: 76px;
-      max-width: 98vw;
-      padding: 18px 2vw 20px 2vw;
-    }
-    ul li {
-      font-size: 0.99em;
-      padding: 8px 7px;
-    }
-  }
+}

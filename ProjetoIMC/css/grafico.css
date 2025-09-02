@@ -2,6 +2,43 @@ body {
     background: linear-gradient(135deg, #fffde7 40%, #ffe082 100%);
     font-family: 'Montserrat', Arial, sans-serif;
   }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .brand {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #1976d2;
+  }
+  
+  .navbar ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .navbar li a.active {
+    text-decoration: underline;
+  }
+
   .container {
     max-width: 700px;
     margin: 45px auto 0;

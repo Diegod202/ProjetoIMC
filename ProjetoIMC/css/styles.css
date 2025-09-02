@@ -1,32 +1,88 @@
 body {
-    background: linear-gradient(135deg, #e8f5e9 0%, #b2dfdb 100%);
-    font-family: 'Montserrat', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brand {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #1976d2;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar li a.active {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 560px;
+  margin: 90px auto 0 auto;
+  background: #fff;
+  padding: 38px 24px 28px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #bbdefb;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #1976d2;
+  margin-bottom: 16px;
+}
+
+p {
+  color: #444;
+  font-size: 1em;
+}
+
+.main-img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #ccc;
+}
+
+@media (max-width: 600px) {
   .container {
-    max-width: 540px;
-    margin: 60px auto;
-    padding: 38px 30px 30px;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px #c8e6c9;
-    text-align: center;
+    margin-top: 76px;
+    max-width: 96vw;
+    padding: 18px 4vw 20px 4vw;
   }
-  h1 {
-    color: #08a88a;
-    margin-bottom: 24px;
-    font-size: 2em;
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
-  p {
-    color: #333;
-    font-size: 1.12em;
-    margin-bottom: 20px;
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  .main-img {
-    width: 95%;
-    max-width: 340px;
-    border-radius: 15px;
-    margin-top: 12px;
-    box-shadow: 0 2px 12px #b2dfdb;
-  }
+}
